@@ -1,0 +1,53 @@
+% **** Szablon pracy magisterskiej, licencjackiej lub inżynierskiej ****
+
+\documentclass[polish,12pt,twoside,a4paper]{report}
+
+\input{style.tex}
+
+%definicja przydatnych poleceń
+\newcommand{\wydzial}{KOLEGIUM INFORMATYKI STOSOWANEJ}
+\newcommand{\kierunek}{Kierunek: INFORMATYKA}
+\newcommand{\specjalnosc}{Specjalność: Technologie internetowe i mobilne}
+\newcommand{\autor}{Rafał Wąż}
+\newcommand{\album}{Nr albumu studenta w67207}
+\newcommand{\temat}{System Zarządzania Symulacją Samochodu}
+\newcommand{\promotor}{mgr inż. Ewa Żesławska}
+\newcommand{\typpracy}{Praca projektowa programowanie obiektowe C\#}
+\newcommand{\miasto}{Rzeszów}
+\newcommand{\rok}{2024}
+
+\begin{document}
+
+% *************** Włączenie definicji pierwszych stron ***************
+\input{front.tex}
+
+% *************** Część główna pracy ***************
+\input{wstep.tex}
+\addcontentsline{toc}{chapter}{Wstęp}
+\newpage
+\input{R1.tex}
+\newpage
+\input{R2.tex}
+\newpage
+\input{R3.tex}
+\newpage
+\input{R4.tex}
+
+% *************** Bibliografia ***************
+\begin{thebibliography}{6}
+\addcontentsline{toc}{chapter}{Bibliografia}
+%dodanie wpisu do spisu bibliograficznego
+
+\bibitem{www-1} https://learn.microsoft.com/pl-pl/visualstudio/releases/2022/system-requirements
+
+\bibitem{etykieta2}https://helion.pl/ksiazki/c-rusz-glowa-wydanie-iv-andrew-stellman-jennifer-greene,cshr4v.htm\#format/d
+
+
+\end{thebibliography}
+\newpage
+
+% *************** Zakończenie ***************
+\input{back.tex}
+
+\end{document}
+% *************** Koniec pliku szablon.tex ***************
